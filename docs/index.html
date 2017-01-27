@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="センサーやアクチュエーターなどの物理デバイスを、JavaScript や CSS といった Web のコードのみで制御できるオープンソースの開発環境 &amp; 組み込みボード「CHIRIMEN」を使い、ユニークな作品づくりに挑戦していただく「Web × IoT メイカーズハッカソン」を開催します。">
+    <meta property="og:image" content="https://browserobo.github.io/hackathon2017/images/general/ogp.jpg">
+    <title>Web × IoT メイカーズハッカソン &mdash; Web ブラウザー技術でモノを制御！</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="icon" type="image/png" href="images/general/favicon.png">
+    <link rel="apple-touch-icon" href="images/general/apple-touch-icon.png">
+  </head>
+  <body>
+    <main itemscope itemtype="http://schema.org/Event">
+      <meta itemprop="url" content="https://browserobo.github.io/hackathon2017/">
+      <meta itemprop="image" content="https://browserobo.github.io/hackathon2017/images/general/ogp.jpg">
+      <div id="header" class="outer">
+        <div class="inner">
+          <header>
+            <h1><strong itemprop="name"><span class="sp">Web <span class="s">×</span> IoT</span> <span>メイカーズ</span><span>ハッカソン</span></strong> <em><span>Web ブラウザー</span><span>技術で</span><span>モノを</span><span>制御！</span></em></h1>
+            <ul class="grid labels">
+              <li><time datetime="2017-03-18">3 月 18 日 (土)</time> – <time datetime="2017-03-19">19 日 (日)</time> <span>@ Impact HUB Tokyo</span></li>
+              <li><a href="https://twitter.com/search?f=tweets&amp;q=%23WebIoTHack">#WebIoTHack</a></li>
+            </ul>
+          </header>
+        </div>
+      </div>
+      <div id="nav" class="outer">
+        <div class="inner">
+          <nav role="directory">
+            <ul>
+              <li><a href="#intro">イベントの主旨</a></li>
+              <li><a href="#chirimen">CHIRIMEN について</a></li>
+              <li><a href="#outline">開催概要</a></li>
+              <li><a href="#details">詳細</a></li>
+              <li><a href="#schedule">当日のスケジュール</a></li>
+              <li><a href="#faq">よくある質問</a></li>
+              <li><a href="#join">お申し込み</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div id="intro" class="outer">
+        <div class="inner">
+          <section class="columns">
+            <h2>イベントの主旨</h2>
+            <p itemprop="description">センサーやアクチュエーターなどの物理デバイスを、JavaScript や CSS といった Web のコードのみで制御できるオープンソースの開発環境 &amp; 組み込みボード「CHIRIMEN」を使い、ユニークな作品づくりに挑戦していただく「Web × IoT メイカーズハッカソン」を開催します。</p>
+            <p>Web × IoT メイカーズハッカソンでは、電子部品の制御インターフェイスとして広く用いられている GPIO や I2C を直接操作する低レベル API を備えた CHIRIMEN ボードを題材にするため、ハードウェアの制御をブラウザー技術だけでコントロールする作品づくりがテーマとなります。</p>
+            <p>さまざまなアイデアやスキルを持つ開発者やメイカーの皆さんが集まり、真剣にものづくりを競い合うこのハッカソンを通して、Web ブラウザー技術の可能性や将来性についての新たな気づきが生まれることを期待しています。</p>
+            <p>Arduino や Raspberry Pi で工作経験のある方はもちろん、Web のマークアップエンジニアの方、Web デザイナーの方、JavaScript 使いの学生の方も奮ってご参加ください。</p>
+          </section>
+        </div>
+      </div>
+      <div id="brief" class="outer">
+        <div class="inner">
+          <section>
+            <h2>開催要旨</h2>
+            <section id="prizes">
+              <h3>PRIZES</h3>
+              <ul class="grid labels">
+                <li><span>最優秀賞 1 チーム</span> <span>(賞金 20 万円)</span></li>
+                <li><span>優秀賞 1 チーム</span> <span>(賞金 10 万円)</span></li>
+              </ul>
+            </section>
+            <section id="judges">
+              <h3>JUDGES</h3>
+              <ul class="grid pics">
+                <li><a href="#profile-nakamura"><img src="images/judges/nakamura.jpg" srcset="images/judges/nakamura@2x.jpg 1.5x" width="160" height="160" alt=""><span>Osamu Nakamura</span></a></li>
+                <li><a href="#profile-sakai"><img src="images/judges/sakai.jpg" srcset="images/judges/sakai@2x.jpg 1.5x" width="160" height="160" alt=""><span>Naoki Sakai</span></a></li>
+                <li><a href="#profile-takita"><img src="images/judges/takita.jpg" srcset="images/judges/takita@2x.jpg 1.5x" width="160" height="160" alt=""><span>Satoko Takita</span></a></li>
+              </ul>
+            </section>
+            <section id="supportes">
+              <h3>SUPPORTERS</h3>
+              <section>
+                <h4>後援</h4>
+                <ul class="grid logos">
+                  <li><a href="http://www.soumu.go.jp/"><img src="images/supportes/soumu.png" width="160" height="58" alt="総務省"></a></li>
+                  <li><a href="https://www.w3.org/"><img src="images/supportes/w3c.svg" width="120" height="80" alt="W3C"></a></li>
+                </ul>
+              </section>
+              <section>
+                <h4>協力</h4>
+                <ul class="grid logos">
+                  <li><a href="http://www.mri.co.jp/"><img src="images/supportes/mri.png" srcset="images/supportes/mri@2x.png 1.5x" width="140" height="59" alt="三菱総合研究所"></a></li>
+                  <li><a href="http://www.kddi.com/"><img src="images/supportes/kddi.png" srcset="images/supportes/kddi@2x.png 1.5x" width="160" height="72" alt="KDDI"></a></li>
+                  <li><a href="http://panasonic.jp/"><img src="images/supportes/panasonic.png" srcset="images/supportes/panasonic@2x.png 1.5x" width="160" height="26" alt="Panasonic"></a></li>
+                  <li><a href="http://www.fujitsu.com/jp/"><img src="images/supportes/fujitsu.png" srcset="images/supportes/fujitsu@2x.png 1.5x" width="160" height="79" alt="富士通"></a></li>
+                  <li><a href="https://jp.access-company.com/"><img src="images/supportes/access.png" srcset="images/supportes/access@2x.png 1.5x" width="160" height="52" alt="ACCESS"></a></li>
+                  <li><a href="http://www.toshiba.co.jp/"><img src="images/supportes/toshiba.png" srcset="images/supportes/toshiba@2x.png 1.5x" width="160" height="26" alt="東芝"></a></li>
+                  <li><a href="http://water-design.jp/"><img src="images/supportes/water-design.png" srcset="images/supportes/water-design@2x.png 1.5x" width="158" height="80" alt="Water Design"></a></li>
+                  <li><a href="https://chirimen.org/"><img src="images/supportes/chirimen.png" srcset="images/supportes/chirimen@2x.png 1.5x" width="80" height="80" alt="CHIRIMEN Open Hardware"></a></li>
+                  <li><a href="http://hubtokyo.com/"><img src="images/supportes/hubtokyo.png" srcset="images/supportes/hubtokyo@2x.png 1.5x" width="160" height="72" alt="Impact HUB Tokyo"></a></li>
+                </ul>
+              </section>
+            </section>
+          </section>
+        </div>
+      </div>
+      <div id="chirimen" class="outer">
+        <div class="inner">
+          <section id="about-chirimen">
+            <h2><span>CHIRIMEN</span> <span>について</span></h2>
+            <div class="columns nobreak">
+              <p>CHIRIMEN は、センサーやアクチュエーターなどの物理デバイスを Web 技術だけで制御することができるオープンソースの開発環境で、ボードコンピューターとその上で動作するソフトウェアを含めた総称です。ボードコンピューターとしてのハードウェア、その上で動作する Boot to Gecko ソフトウェア、センサーや物理デバイスを JavaScript から制御するための WebGPIO や WebI2C といった低レベル API の実装などが含まれており、日本で誕生した CHIRIMEN Open Hardware というコミュニティによって開発され、CHIRIMEN というコードネームが付けられました。</p>
+              <p>今回のハッカソンでは、2016 年 9 月にスイッチサイエンス社から販売された <a href="https://www.switch-science.com/catalog/2833/">CHIRIMEN ボード Echigo Rev.1</a> を各チームに貸し出し、作品の制作を行っていただきます。</p>
+              <ul>
+                <li><a href="https://chirimen.org/">CHIRIMEN Open Hardware</a></li>
+                <li><a href="https://chirimen.org/docs/ja/">CHIRIMEN 日本語ドキュメント</a> (FAQ やクイックスタートガイド、周辺機器情報等)</li>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </div>
+      <div id="outline" class="outer">
+        <div class="inner">
+          <section>
+            <h2>開催概要</h2>
+            <table>
+              <tr>
+                <th>日時</th>
+                <td>1 日目: <time datetime="2017-03-18" itemprop="startDate">2017 年 3 月 18 日 (土) 10:00 ～ 20:00</time><br>2 日目: <time datetime="2017-03-19" itemprop="endDate">2017 年 3 月 19 日 (日)  9:00 ～ 19:00</time></td>
+              </tr>
+              <tr>
+                <th>会場</th>
+                <td>
+                  <span itemprop="location" itemscope itemtype="http://schema.org/Place">
+                    <span itemprop="name"><a href="http://www.eventspace.impacthub.tokyo/" itemprop="url">Impact HUB Tokyo</a></span><br>
+                    <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                      <span itemprop="addressRegion">東京都</span>
+                      <span itemprop="addressLocality">目黒区</span>
+                      <span itemprop="streetAddress">目黒 2-11-3 印刷工場跡地 1 階</span>
+                    </span>
+                    [<a href="http://www.eventspace.impacthub.tokyo/">地図</a>]<br>
+                    [アクセス] 目黒駅 (JR 山手線西口、東急目黒線・地下鉄南北線・三田線) より徒歩 8 分
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <th>参加費</th>
+                <td>無料</td>
+              </tr>
+              <tr>
+                <th>応募と定員</th>
+                <td>8 チーム (1 チーム 2 名 ～ 5 名まで) 最大 40 名
+                  <ul>
+                    <li>2 名 ～ 5 名編成のチームとして、チーム代表者の方がお申し込みください。(先着順)<br>※ 個人で参加ご希望の方は、CHIRIMEN コミュニティの <a href="https://docs.google.com/forms/d/e/1FAIpQLScyfyFZbe7uZbQQzSQq78tRqtRKWXvmDRR_dO39wtzYIQFV5g/viewform">Slack</a> や <a href="https://www.facebook.com/groups/chirimen/">Facebook グループ</a> 等でチームメンバーの募集などを呼びかけた上で、2 名以上のチームとしてお申し込みいただくことをお勧めします。</li>
+                    <li>チームメンバーが見つからず、個人での応募を希望される場合は、<a href="mailto:hackathon2017@mozilla-japan.org">Web × IoT メイカーズハッカソン実行委員会事務局</a> 宛にメールでその旨ご相談ください。応募状況に応じて、4 名以下のチームへの割り振り等を検討いたします。(ただし、状況によりご参加いただけない可能性もございますのであらかじめご了承ください)</li>
+                    <li>状況により、4 名以下のチームに個人参加希望者を割り振らせていただく場合があります。(個人応募者の追加を希望しないチームは、申し込み時にその旨お知らせください)</li>
+                    <li>今回募集する 8 チームの他に、<a href="#students">ハッカソン参加に向けての予備教室</a> を受講した学生によるチームが 1 ～ 2 チームハッカソンに参加する予定です。</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <th>同意書と確認書</th>
+                <td>本ハッカソンに参加いただく場合は、以下同意書に同意いただいたものといたします。
+                  <ul>
+                    <li>各参加者の方は、お申し込み前に必ず <a href="docs/agreement.pdf">ハッカソン同意書</a> をご確認ください。</li>
+                    <li>なお、ハッカソン終了後には、各チームに成果物に対する知的財産権等の扱いに関する <a href="docs/confirmation.pdf">ハッカソン確認書</a> のご提出をお願いいたします。</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <th>参加の注意事項</th>
+                <td>
+                  <ul>
+                    <li>ハッカソン当日にコーディング、電子工作、組み立て等いずれかの作業を行ってください。</li>
+                    <li>チーム作業時間中に、作品制作とプレゼンテーション準備を完了させてください。</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <th>参加申し込み方法</th>
+                <td>Connpass の <a href="https://connpass.com/event/48422/">お申し込みページ</a> より、チーム代表者の方がまとめてお申し込みください。(お申し込み時のアンケートで各チームメンバーのお名前とメールアドレスをご記入いただきますので、そうした情報をご用意の上お申し込みください。)</td>
+              </tr>
+              <tr>
+                <th>応募締切</th>
+                <td>2017 年 2 月 28 日 (定員に達し次第、お申し込みを締め切らせていただきます)</td>
+              </tr>
+              <tr>
+                <th>主催</th>
+                <td><span itemprop="organizer" itemscope itemtype="http://schema.org/Organization"><span itemprop="name">Web × IoT メイカーズハッカソン実行委員会</span></span></td>
+              </tr>
+              <tr>
+                <th>後援</th>
+                <td>
+                  <span itemprop="contributor" itemscope itemtype="https://schema.org/GovernmentOrganization"><span itemprop="name">総務省</span></span>、
+                  <span itemprop="contributor" itemscope itemtype="https://schema.org/Organization"><span itemprop="name">W3C</span></span>
+                </td>
+              </tr>
+              <tr>
+                <th>協力</th>
+                <td>
+                  <span itemprop="contributor" itemscope itemtype="https://schema.org/Corporation"><span itemprop="name">株式会社三菱総合研究所</span></span>、
+                  <span itemprop="contributor" itemscope itemtype="https://schema.org/Organization"><span itemprop="name">公益財団法人 KDDI 財団</span></span>、
+                  <span itemprop="contributor" itemscope itemtype="https://schema.org/Corporation"><span itemprop="name">KDDI 株式会社</span></span>、
+                  <span itemprop="contributor" itemscope itemtype="https://schema.org/Corporation"><span itemprop="name">パナソニック株式会社</span></span>、
+                  <span itemprop="contributor" itemscope itemtype="https://schema.org/Corporation"><span itemprop="name">富士通株式会社</span></span>、
+                  <span itemprop="contributor" itemscope itemtype="https://schema.org/Corporation"><span itemprop="name">株式会社 ACCESS</span></span>、
+                  <span itemprop="contributor" itemscope itemtype="https://schema.org/Corporation"><span itemprop="name">株式会社東芝</span></span>、
+                  <span itemprop="contributor" itemscope itemtype="https://schema.org/Corporation"><span itemprop="name">Water Design</span></span>、
+                  <span itemprop="contributor" itemscope itemtype="https://schema.org/Organization"><span itemprop="name">CHIRIMEN Open Hardware</span></span>、
+                  <span itemprop="contributor" itemscope itemtype="https://schema.org/Organization"><span itemprop="name">Impact HUB Tokyo</span></span>
+                </td>
+              </tr>
+              <tr>
+                <th>事務局</th>
+                <td>
+                  <span itemprop="contributor" itemscope itemtype="https://schema.org/Organization"><span itemprop="name">一般社団法人 Mozilla Japan</span></span>
+                </td>
+              </tr>
+              <tr>
+                <th>表彰</th>
+                <td>最優秀賞 1 チーム (賞金 20 万円)、優秀賞 1 チーム (賞金 10 万円)</td>
+              </tr>
+              <tr>
+                <th>審査基準</th>
+                <td>
+                  <ul>
+                    <li>アイデアの独創性・ユースケースの有用性</li>
+                    <li>ハードウェア制御の方法</li>
+                    <li>Web 技術の利用 (特に、WebGPIO/WebI2C インターフェイスを通じた制御・ブラウザーの利用を兼ね備えているか？ ブラウザーの新たな可能性を追求しているか？)</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <th>審査員長</th>
+                <td>
+                  <div id="profile-nakamura" class="profile" itemprop="contributor" itemscope itemtype="https://schema.org/Person">
+                    <img src="images/judges/nakamura.jpg" srcset="images/judges/nakamura@2x.jpg 1.5x" width="160" height="160" alt="" itemprop="image">
+                    <span itemprop="name">中村 修</span> <span itemprop="jobTitle">慶應義塾大学 環境情報学部 教授・W3C/Keio サイトマネージャ</span>
+                    <p itemprop="description">1983 年　慶應義塾大学工学部卒業　工学博士、1990 年から東京大学大型計算機センター助手を経て 1993 年慶應義塾大学環境情報学部助手となり、現在慶應義塾大学環境情報学部教授。1987 年から WIDE プロジェクトにてインターネットの研究開発に携わる。広帯域インターネットや IPv6 の研究開発、普及に携わる。2014 年から W3C/KEIO サイトマネージャに就任し、Web 技術の標準化活動を推進する。<br>WIDE プロジェクト ボード / 総務省 IPv6 研究会委員 / IPv6 普及高度化推進協議会理事</p>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th>審査員</th>
+                <td>
+                  <ul class="plain">
+                    <li>
+                      <div id="profile-sakai" class="profile" itemprop="contributor" itemscope itemtype="https://schema.org/Person">
+                        <img src="images/judges/sakai.jpg" srcset="images/judges/sakai@2x.jpg 1.5x" width="160" height="160" alt="" itemprop="image">
+                        <span itemprop="name">坂井直樹</span> <span itemprop="jobTitle">Water Design 代表取締役</span>
+                        <p itemprop="description">コンセプター。京都市立芸術大学入学後、渡米。サンフランシスコで Tattoo Company を設立刺青プリント T シャツ販売。帰国後はテキスタイルデザイナーとして活躍後、1987 年に日産自動車から販売された「Be-1」のコンセプト企画でヒットを出し、その後は国内外の製品開発に携わる。2008 〜 2013 年 慶應義塾大学 SFC 教授<br>ブログ「<a href="http://sakainaoki.blogspot.jp/">坂井直樹のデザインの深読み</a>」</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div id="profile-takita" class="profile" itemprop="contributor" itemscope itemtype="https://schema.org/Person">
+                        <img src="images/judges/takita.jpg" srcset="images/judges/takita@2x.jpg 1.5x" width="160" height="160" alt="" itemprop="image">
+                        <span itemprop="name">瀧田 佐登子</span> <span itemprop="jobTitle">一般社団法人 Mozilla Japan 代表理事</span>
+                        <p itemprop="description">国内IT企業で UNIX・インターネット事業に携わった後、米国 Netscape の開発現場でブラウザーの国際化・日本語化に従事。その後、2004 年に Mozilla Japan を設立し、2006 年代表理事に就任。ブラウザー Firefox をはじめとする Mozilla の製品や技術、オープンソースの普及啓蒙活動を行う傍ら、慶應義塾大学や中央大学理工学部で講師を務める。日経ウーマン・オブ・ザ・イヤー 2009 リーダー部門受賞。2009 年度日本 OSS 貢献者賞受賞。第 9 回北東アジア OSS 推進フォーラム特別貢献者賞受賞。</p>
+                      </div>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </section>
+        </div>
+      </div>
+      <div id="details" class="outer">
+        <div class="inner">
+          <section>
+            <h2>詳細</h2>
+            <section id="materials">
+              <h3><span>ハッカソン制作物の</span><span>素材について</span></h3>
+              <ul>
+                <li>CHIRIMEN ボード Echigo Rev.1 は、ハッカソン当日、各参加チーム各 1 台お貸し出しいたします</li>
+                <li>事前に CHIRIMEN ボードの貸し出しを希望されるチームには、参加申し込み締切後、チームに 1 台お貸し出しいたします (ご希望の場合は、事務局にご連絡ください)。</li>
+                <li>CHIRIMEN の周辺機器 (モニター、Wi-Fi ドングル、USB ハブ、電源アダプタ、マウス) は会場にもご用意しています。</li>
+                <li>開発用の PC は各自ご持参ください。</li>
+                <li>
+                  今回のハッカソンでは、各チームの作品の制作や開発に関わるセンサーや作品部材の材料費の実費を上限額を決めたかたちで主催者が負担いたします。<br>
+                  <strong>[1名あたり 6,000円 (税込)] × [チームの人数] の合計額 がそのチームの材料費の上限額になります。</strong><br>
+                  【例: 2 名チームの場合】上限 税込 12,000 円まで実費精算可能<br>
+                  【例: 5 名チームの場合】上限 税込 30,000 円まで実費精算可能<br>
+                  ※ 材料は事前に購入され、当日会場にご持参いただくことができますが、必ずレシートまたは領収書が必要となります。精算方法等詳細については別途、各参加チームの代表者の方にお知らせいたします。
+                </li>
+                <li>主なセンサー類は、当日、ハッカソン会場でも現金販売を行う予定です。</li>
+                <li>会場での半田付け作業は可能です。(半田の数に限りがありますのでお持ちの方はご持参ください)</li>
+              </ul>
+            </section>
+            <section id="feedback">
+              <h3><span>本ハッカソンにおける</span> <span>Web 国際標準化</span><span>活動への</span><span>フィードバックについて</span></h3>
+              <p>本ハッカソンの開催を通して得られた Web 技術や API についての意見や具体的なユースケース、課題や解決策などは、開催後に主催者側で取りまとめ、今後の国際標準化活動へのフィードバックとして役立てる予定です。</p>
+            </section>
+            <section id="touch-try" class="bold">
+              <h3><span>事前開催</span> <span>CHIRIMEN</span> <span>Touch &amp; Try</span> <span>イベント</span></h3>
+              <img src="images/content/chirimen.jpg" srcset="images/content/chirimen@2x.jpg 1.5x" width="320" height="240" alt="">
+              <p>2 月 4 日 (土) に CHIRIMEN コミュニティ主催の 「<a href="https://chirimen-oh.connpass.com/event/47706/">CHIRIMEN タッチ＆トライ イベント ～ CHIRIMEN Board Echigo Rev.1 を触ってみよう！</a>」が開催されます。Web × IoT メイカーズハッカソンにお申し込み (または参加をお考え) の方で、CHIRIMEN ボードの実機を試したことがないという方は、この機会にお試しいただけます。また、個人で参加を希望される方のチームメイト探しの場としてもご活用ください。</p>
+            </section>
+            <section id="students" class="bold">
+              <h3><span>学生向け</span><span>ハッカソン</span><span>参加のための</span><span>予備教室</span></h3>
+              <p>「今回のハッカソンに参加してみたいが、自分のスキルが心配！」という学生の方向けに、ハッカソン開催前に 3 日間 (3/2、3/3、3/11 全 3 回) の予備教室を開催します。対象は、JavaScript の基礎知識がある大学生・専門学校生等の学生の方、5 名 ～ 10 名です。予備教室の受講者は、Web × IoT メイカーズハッカソンに、募集枠とは別枠で学生チームとして参加いただくことができます。 詳しくは、<a href="https://connpass.com/event/49593/">こちらのページ</a> でご案内しております。</p>
+            </section>
+          </section>
+        </div>
+      </div>
+      <div id="schedule" class="outer">
+        <div class="inner">
+          <section>
+            <h2><span>当日の</span><span>スケジュール</span></h2>
+            <div class="row">
+              <div class="col">
+                <table>
+                  <caption><time datetime="2017-03-18">1 日目 (3/18)</time></caption>
+                  <tbody>
+                    <tr>
+                      <th>9:45 –</th>
+                      <td>受付開始</td>
+                    </tr>
+                    <tr>
+                      <th>10:00 – 11:00</th>
+                      <td>開会 / オリエンテーション / 準備</td>
+                    </tr>
+                    <tr>
+                      <th>11:00 – 20:00</th>
+                      <td>チーム作業</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="col">
+                <table>
+                  <caption><time datetime="2017-03-18">2 日目 (3/19)</time></caption>
+                  <tbody>
+                    <tr>
+                      <th>9:00 – 15:00</th>
+                      <td>チーム作業</td>
+                    </tr>
+                    <tr>
+                      <th>15:00 – 16:30</th>
+                      <td>成果発表 (各チームによる 5 分プレゼン)</td>
+                    </tr>
+                    <tr>
+                      <th>16:30 – 17:30</th>
+                      <td>休憩 / 参加者ディスカッション (Web 標準技術の課題や意見など)<br>(同時並行) 審査員による審査</td>
+                    </tr>
+                    <tr>
+                      <th>17:30 – 19:00</th>
+                      <td>懇親会 / 結果発表 / 講評 / 表彰 / 記念写真</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <div id="faq" class="outer">
+        <div class="inner">
+          <section>
+            <h2>よくある質問</h2>
+            <div class="columns nobreak">
+              <section>
+                <h3>電源と Wi-Fi</h3>
+                <p>会場には電源および、本ハッカソン参加者用の Wi-Fi をご用意します。</p>
+              </section>
+              <section>
+                <h3>昼食について</h3>
+                <p>昼食は、各自ご自由にお取りください。(会場内への飲食の持ち込みは可能です)</p>
+              </section>
+              <section>
+                <h3>会場の利用時間について</h3>
+                <p>会場の利用時間は、本ハッカソンの開催時間内に限ります。(泊まりや深夜作業などはできません)</p>
+              </section>
+              <section>
+                <h3>チームメンバーが見つかりそうもないため、個人で参加したいのですが、どうしたらよいでしょうか？</h3>
+                <p>個人での参加を希望される旨、<a href="mailto:hackathon2017@mozilla-japan.org">Web × IoT メイカーズハッカソン実行委員会事務局</a> 宛にメールでご連絡ください。応募状況に応じて、4 名以下のチームへの割り振り等ができないかを検討いたします。(ただし、状況によりご参加いただけない可能性もございますのであらかじめご了承ください)</p>
+              </section>
+              <section>
+                <h3>ハッカソンに向けて、情報収集や勉強になるイベントはありますか？</h3>
+                <p>2/4 (土) に CHIRIMEN コミュニティ主催の「<a href="#touch-try">CHIRIMEN タッチ＆トライ イベント ～ CHIRIMEN Board Echigo Rev.1 を触ってみよう！</a>」が開催されます。また、「<a href="#students">学生向けハッカソン参加のための予備教室</a>」が 3/2、3/3、3/11 に開催されます。</p>
+              </section>
+            </div>
+          </section>
+        </div>
+      </div>
+      <div id="join" class="outer">
+        <div class="inner">
+          <section itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+            <h2>お申し込み</h2>
+            <meta itemprop="price" content="0">
+            <ul class="grid labels buttons">
+              <li><a href="https://connpass.com/event/48422/" class="button cta" itemprop="url"><span>チームでの</span><span>参加お申し込み</span></a> <span>先着順にて受付</span></li>
+            </ul>
+          </section>
+        </div>
+      </div>
+      <div id="footer" class="outer">
+        <div class="inner">
+          <footer role="contentinfo">
+            <h2>サイト情報</h2>
+            <p><span>Copyright &copy; 2017</span> <span>Web × IoT メイカーズハッカソン</span><span>実行委員会</span></p>
+          </footer>
+        </div>
+      </div>
+    </main>
+    <div id="overlay-container" aria-hidden="true" data-close-button-label="オーバーレイを閉じる"></div>
+    <script src="https://use.typekit.net/yfn4cbp.js"></script>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
