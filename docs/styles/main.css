@@ -593,6 +593,10 @@ ul.grid.pics li a * {
   #header h1 strong {
     font-size: 4.5rem;
   }
+
+  #judges .grid {
+    margin: 0 120px;
+  }
 }
 
 @media screen and (max-width: 767px) {
