@@ -1,0 +1,89 @@
+@import 'main.css';
+
+#overview h2, #afterword h2 {
+  position: absolute;
+  left: -99999px;
+  height: 0;
+}
+
+#teams h3 strong {
+  display: inline-block;
+  margin: 0 4px;
+  border: 2px solid #EEE;
+  border-radius: 5px;
+  padding: 2px 8px;
+  font-size: 1.2rem;
+  font-weight: normal;
+  vertical-align: 4px;
+}
+
+#teams h3 .num {
+  font-size: 1.2rem;
+  vertical-align: 4px;
+}
+
+@media screen {
+  #header {
+    background-image: url(../images/backgrounds/report-cover.jpg);
+    background-size: 1920px 480px;
+  }
+
+  #afterword {
+    background-image: url(../images/backgrounds/board-texture-3.jpg);
+  }
+
+  .margin {
+    height: 320px;
+    background-position: center top;
+    background-repeat: no-repeat;
+  }
+
+  #margin-1 {
+    background-image: url(../images/backgrounds/report-1.jpg);
+  }
+
+  #margin-2 {
+    background-image: url(../images/backgrounds/report-2.jpg);
+  }
+
+  #margin-3 {
+    background-image: url(../images/backgrounds/report-3.jpg);
+  }
+
+  #margin-4 {
+    background-image: url(../images/backgrounds/report-4.jpg);
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .margin {
+    background-size: cover;
+  }
+
+  .hr {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .margin {
+    height: 240px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .margin {
+    height: 160px;
+  }
+
+  #header {
+    height: 320px;
+    background-size: 1280px 320px;
+    background-position: center top;
+  }
+
+  #teams h3 strong, #teams h3 .num {
+    font-size: 1rem;
+    vertical-align: 2px;
+  }
+}

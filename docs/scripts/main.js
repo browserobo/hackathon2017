@@ -65,6 +65,10 @@ window.addEventListener('DOMContentLoaded', function () {
   var $owner;
   var $overlay;
 
+  if (!$container) {
+    return;
+  }
+
   var show_overlay = function () {
     var $button = document.createElement('a');
 

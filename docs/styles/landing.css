@@ -1,0 +1,243 @@
+@import 'main.css';
+
+#closing h2, #intro h2, #brief h2, #details h2 {
+  position: absolute;
+  left: -99999px;
+  height: 0;
+}
+
+#closing {
+  font-size: 1.25rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+#closing p span {
+  display: inline-block;
+}
+
+#closing .labels li * {
+  display: block;
+}
+
+#intro [itemprop="description"] {
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+#brief h3 ~ section {
+  margin-top: 24px;
+}
+
+#brief ul.grid.labels {
+  font-size: 1.25rem;
+}
+
+#outline .profile [itemprop="jobTitle"]::before {
+  content: "(";
+}
+
+#outline .profile [itemprop="jobTitle"]::after {
+  content: ")";
+}
+
+#outline .profile [itemprop="image"],
+#outline .profile [itemprop="description"] {
+  display: none;
+}
+
+#touch-try {
+  overflow: hidden;
+}
+
+#touch-try img {
+  display: block;
+}
+
+#schedule caption {
+  margin: 0 0 16px;
+  font-size: 2rem;
+}
+
+#faq .columns section:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+#faq h3 {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.75;
+  font-weight: 700;
+  text-align: left;
+}
+
+#faq h3::before {
+  content: "Q. ";
+}
+
+#faq p {
+  margin: 0;
+}
+
+#faq p::before {
+  content: "A. ";
+}
+
+#join ul.grid.labels {
+  flex-direction: row !important;
+}
+
+#join .button {
+  display: block;
+  margin: 0 auto;
+  min-width: 10em;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+#join .button + span {
+  display: block;
+  margin: 8px 0;
+  color: #999;
+}
+
+@media screen {
+  #header {
+    background-image: url(../images/backgrounds/teams.jpg);
+    background-size: cover;
+  }
+
+  #intro {
+    background-image: url(../images/backgrounds/board-texture-1.jpg);
+  }
+
+  #intro p {
+    margin: 0 0 12px;
+  }
+
+  #intro p:last-child {
+    margin-bottom: 0;
+  }
+
+  #outline th, #outline td {
+    border-color: #C8C6B5;
+  }
+
+  #chirimen p {
+    margin-bottom: 0;
+  }
+
+  #details {
+    background-image: url(../images/backgrounds/board-texture-2.jpg);
+  }
+
+  #touch-try img {
+    float: right;
+    margin: 0 0 0 32px;
+  }
+
+  #schedule {
+    background-image: url(../images/backgrounds/team.jpg);
+  }
+
+  #schedule th, #schedule td {
+    border-color: rgba(255, 255, 255, .4);
+  }
+
+  #join {
+    background-image: url(../images/backgrounds/board-texture-3.jpg);
+  }
+
+  .overlay.profile [itemprop="image"] {
+    float: left;
+    margin-right: 16px;
+  }
+
+  .overlay.profile [itemprop="image"] ~ * {
+    margin-left: 176px;
+  }
+
+  .overlay.profile [itemprop="name"] {
+    display: block;
+    font-size: 2rem;
+  }
+
+  .overlay.profile [itemprop="jobTitle"] {
+    display: block;
+  }
+
+  .overlay.profile [itemprop="description"] {
+    margin-top: 8px;
+    margin-bottom: 0;
+    font-size: 0.875rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  #judges .grid {
+    margin: 0 120px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #header {
+    height: auto;
+    padding: 40px 0;
+  }
+
+  #closing {
+    font-size: 1rem;
+    line-height: 1.75;
+  }
+
+  #closing p span {
+    display: inline;
+  }
+
+
+  #closing img {
+    width: 288px;
+    max-width: 100%;
+    height: auto;
+  }
+
+  #schedule caption {
+    font-size: 1.5rem;
+  }
+
+  .overlay.profile [itemprop="image"] {
+    display: none;
+  }
+
+  .overlay.profile [itemprop="image"] ~ * {
+    margin-left: 0;
+  }
+
+  .overlay.profile [itemprop="name"] {
+    font-size: 1.5rem;
+  }
+
+  .overlay.profile [itemprop="description"] {
+    font-size: .75rem;
+  }
+}
+
+@media screen and (max-width: 639px) {
+  #outline th {
+    background-color: #C8C6B5;
+  }
+
+  #schedule th {
+    background-color: rgba(255, 255, 255, .2);
+  }
+}
+
+@media print {
+  #touch-try img {
+    margin: 1em auto;
+  }
+
+  #join {
+    display: none;
+  }
+}

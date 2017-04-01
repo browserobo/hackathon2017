@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta property="og:image" content="https://browserobo.github.io/hackathon2017/images/general/ogp.jpg">
+    <title>Web × IoT メイカーズハッカソン 開催レポート</title>
+    <link rel="stylesheet" href="../styles/report.css">
+    <link rel="icon" type="image/png" href="../images/general/favicon.png">
+    <link rel="apple-touch-icon" href="../images/general/apple-touch-icon.png">
+  </head>
+  <body>
+    <main>
+      <div id="header" class="outer">
+        <div class="inner">
+          <header>
+            <h1><strong><span class="sp">Web <span class="s">×</span> IoT</span> <span>メイカーズ</span><span>ハッカソン</span></strong> <em><span>開催レポート</span></em></h1>
+          </header>
+        </div>
+      </div>
+      <div id="nav" class="outer">
+        <div class="inner">
+          <nav role="directory">
+            <ul>
+              <li><a href="#overview">概要</a></li>
+              <li><a href="#chirimen">CHIRIMEN</a></li>
+              <li><a href="#venue">会場</a></li>
+              <li><a href="#teams">チーム</a></li>
+              <li><a href="#orientation">オリエンテーション</a></li>
+              <li><a href="#work">作業</a></li>
+              <li><a href="#feedback">フィードバック</a></li>
+              <li><a href="#results">審査結果</a></li>
+              <li><a href="#party">懇親会</a></li>
+              <li><a href="../">ホーム</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div id="overview" class="outer outer-1">
+        <div class="inner">
+          <section>
+            <h2>イベント概要</h2>
+            <div class="row">
+              <div class="col">
+                <p>2017 年 3 月 18 日、19 日に <a href="../">Web × IoT メイカーズハッカソン</a> が開催された。「Web ブラウザー技術でモノを制御！」をテーマに、オープンソースの開発環境＆組み込みボードである CHIRIMEN (Echigo Rev.1) を使った作品を作成し、参加した 12 チームがその成果を競った。</p>
+                <p>主催は Web × IoT メイカーズハッカソン実行委員会、後援は総務省、W3C。その他にも、株式会社三菱総合研究所、公益財団法人 KDDI 財団、KDDI 株式会社、パナソニック株式会社、富士通株式会社、株式会社 ACCESS、株式会社東芝、Water Design、CHIRIMEN Open Hardware、Impact HUB Tokyo が協力した。</p>
+              </div>
+              <div class="col">
+                <p>ハッカソンのルールを以下、簡単に説明する。</p>
+                <ul>
+                  <li>1 チームは、2 名 ～ 5 名</li>
+                  <li>CHIRIMEN ボード (Echigo Rev.1) を各参加チームに 1 台ずつ貸し出し</li>
+                  <li>当日にコーディング、電子工作、組み立てなどの作業を行う</li>
+                  <li>チーム作業時間中に、作品制作とプレゼンテーション準備を完了</li>
+                  <li>作品の制作や開発に関わるセンサーや作品部材の材料費の実費を [1 名あたり 6,000 円 (税込)] × [チームの人数] を上限として、主催者から提供</li>
+                  <li>その他、制作に必要となる CHIRIMEN の周辺機器 (モニター、Wi-Fi ドングル、USB ハブ、電源アダプター、マウス) は、主催者が会場で提供</li>
+                  <li>主なセンサー類は、会場にて現金販売</li>
+                  <li>チームによる作業時間は、1 日目が 11:00 ～ 20:00、2 日目が 9:00 ～ 14:30</li>
+                </ul>
+              </div>
+            </div>
+            <div class="hr"></div>
+            <div class="row">
+              <div class="col">
+                <p>審査委員長は、中村修 慶應義塾大学環境情報学部教授・W3C/Keio サイトマネージャ。また、審査委員として、瀧田佐登子 (一般社団法人 Mozilla Japan 代表理事)、苗村健 (東京大学大学院情報学環教授) の 2 氏が担当した (当初、Water Design 代表取締役の坂井直樹氏も予定されていたが、急遽ご都合により不参加となった)。</p>
+                <p>審査基準は、以下の通り。</p>
+                <ul>
+                  <li>アイデアの独創性・ユースケースの有用性</li>
+                  <li>ハードウェア制御の方法</li>
+                  <li>Web 技術の利用 (特に、WebGPIO/WebI2C インターフェイスを通じた制御・ブラウザーの利用を兼ね備えているか？ブラウザーの新たな可能性を追求しているか？)</li>
+                </ul>
+              </div>
+              <div class="col">
+                <p>ハッカソン作業終了後の各チームの成果報告と審査会を経て、今回、最優秀賞 (賞金 20 万円) および優秀賞 (賞金 10 万円) として、以下の 2 チームが表彰された。</p>
+                <ul>
+                  <li><strong>最優秀賞: つくるラボ (作品名: HeartWeather)</strong></li>
+                  <li><strong>優秀賞: 村井研元 Arch (作品名: moood)</strong></li>
+                </ul>
+                <p>以下、「Web × IoT メイカーズハッカソン」当日の様子や各参加チーム・作品について紹介する。</p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <div id="chirimen" class="outer outer-2">
+        <div class="inner">
+          <section>
+            <h2><span>題材となった</span> <span>CHIRIMEN とは</span></h2>
+            <div class="row">
+              <div class="col">
+                <figure>
+                  <img src="../images/report/f01.jpg" srcset="../images/report/f01@2x.jpg 1.5x" width="400" height="300" alt="">
+                  <figcaption>配布された CHIRIMEN のキット</figcaption>
+                </figure>
+              </div>
+              <div class="col">
+                <p>CHIRIMEN は、一言で言えば「IoT (Internet of Things) を Web ブラウザー技術のみで実現する開発環境」。日本で誕生した CHIRIMEN Open Hardware というコミュニティ活動のプロジェクトとして開発が行われたボードコンピューターとその上で動作するソフトウェアの総称である。コミュニティでは、PC やスマートフォンに加え、様々なデバイス (家電、車、各種センサー、アクチュエーター) を Web 技術で連携・直接制御する方法の検討を行っているが、そのプロトタイプ環境がまさに CHIRIMEN である。</p>
+                <p>ボード上では Boot to Gecko (B2G) ソフトウェアが動作し、Web ブラウザーを経由して接続されたセンサーやアクチュエーターの制御を行えるようになっている。具体的には、WebGPIO や WebI2C といった低レベル API を利用して、JavaScript による実装により制御が可能となる。市販されているセンサーやアクチュエーターの多くは、GPIO/I2C のインターフェイスで接続し制御されるため、CHIRIMEN を使うことで、実際に Web アプリケーションから制御し、その動作を試すことができるようになる。ソースコードや仕様などはすべてオープン化されており、一般販売も行われている (本校執筆時点では、完売状態)。</p>
+              </div>
+            </div>
+            <div class="hr"></div>
+            <div class="row">
+              <div class="col">
+                <p>ハッカソンで配布された Echigo Rev.1 の主な仕様は、以下の通り。</p>
+                <ul>
+                  <li>SoC: RK3066 1.6GHz ARM Cortex-A9 デュアルコア Mali-400 GPU クアッドコア</li>
+                  <li>メモリー: 1GB DDR3</li>
+                  <li>ストレージ: NAND Flash 8GB、MicroSD メモリーカードスロット</li>
+                  <li>映像出力: Micro HDMI</li>
+                  <li>音声入出力: ステレオ IN × 1 / OUT × 1</li>
+                  <li>USB: MicroUSB × 1 (OTG)、USB × 1、MicroUSB × 1 (UART debug)</li>
+                  <li>GPIO、I2C、SPI、PWM、ADC (コネクタ配置)</li>
+                </ul>
+              </div>
+              <div class="col">
+                <p>ネットワーク機能は搭載されておらず、USB 接続の Wi-Fi アダプター経由で行う。5V1A 以上の電源用アダプターが必要になる。</p>
+                <p>CHIRIMEN の名前の由来であるが、「Web」と「モノ」という異なる糸を織り込んで、縮緬のような独自の新世界をもたらしたい、さらに日本からスタートしたプロジェクトであることからもこの名称が付けられたとのことだ。</p>
+                <p>今回のハッカソンではどんな作品が織り上がるか、以下で紹介していきたい。</p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <div id="venue" class="outer outer-1">
+        <div class="inner">
+          <section>
+            <h2><span>会場は、</span><span>Impact HUB Tokyo</span></h2>
+            <div class="row">
+              <div class="col">
+                <p>会場となった Impact HUB Tokyo は、2005 年にイギリスで誕生したグローバルなアントレプレナー達のコミュニティ兼コワーキングスペースのネットワークでもある Impact HUB の一員として、2013 年に東京目黒にオープンした施設。個人での在宅勤務では対人活動が少なく、孤立感の高まり、業務の拡大が望めないといった問題点を克服することが目標の 1 つである。単に、業務を行うためのデスクの提供に留まらない。個室ではなく、オープンスペースで構成され、メンバーによる各種イベントなども開催される。</p>
+                <p>「Grow (育つ)・People (コミュニティ)・Space (場)」という 3 つの観点を重んじ、「Questioning (現状に対する問いかけ) + Action (行動) = Impact (インパクト)」をコンセプトに、メンバーは社会を変えていくというミッションを共有しながら様々な職種の人々が出会い、新しいビジネスや可能性を広げていく。そのために、アイディアソンやセミナーなども開催される。まさに、人々のハブとなり、社会を変えていく、志の高い人々がゆるく繋がる場、そんな印象が今回の若手エンジニアや IoT 分野でのものづくりを行うメイカーの育成を後押しするハッカソンのイメージと非常にマッチしていた。</p>
+                <p>建物は、かつて印刷工場であったものだ。外観もそうであるが、内部の雰囲気は独特のものがある。カフェも併設するが、”MINEDRIP COFFE”の名前にもあるように、ドリップを使い、レクチャーを受けながら客自らがコーヒーを淹れるというシステム。そんなユニークな会場で、ユニークなハッカソンが開催された。</p>
+              </div>
+              <div class="col">
+                <figure>
+                  <img src="../images/report/f02.jpg" srcset="../images/report/f02@2x.jpg 1.5x" width="400" height="300" alt="">
+                  <figcaption>IMPACT HUB Tokyo の外壁</figcaption>
+                </figure>
+                <figure>
+                  <img src="../images/report/f03.jpg" srcset="../images/report/f03@2x.jpg 1.5x" width="400" height="300" alt="">
+                  <figcaption>準備中の会場</figcaption>
+                </figure>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <div id="margin-1" class="margin"></div>
+      <div id="teams" class="outer outer-2">
+        <div class="inner">
+          <section>
+            <h2><span>各参加チームと</span><span>作品の紹介</span></h2>
+            <div class="row">
+              <div class="col">
+                <p>今回のハッカソンには、合計 12 チーム、45 人が参加した。事前に、学生向けハッカソン参加のための予備教室も開催され、ここから学生チームとして、2 チームが参加した。</p>
+              </div>
+              <div class="col">
+                <p>参加の各チーム (A チームから L チーム) と今回のハッカソンで、作成 (を目標と) した作品の概要を紹介する。</p>
+              </div>
+            </div>
+            <section class="columns nobreak bold">
+              <h3><strong>Team A</strong> <span>村井研元 Arch</span> <span class="num">(2 名)</span></h3>
+              <p>従来の Web コンテンツは、ニュースや読み物、掲示板など 1 人で楽しむものが多かった。一方、最近はコンピューターの高性能化によりテレビで回覧するコンテンツなど、複数人での Web コンテンツ消費が開発、注目されている。本作品では、これまで以上にスムーズに、複数人で Web コンテンツを楽しむことを目指した。</p>
+              <p>具体的には、センサーにより部屋の状況を測定する (温度、音、明るさなど)。これらの数値から、その部屋のムードを予測し、最適なコンテンツをサジェストする。ユーザーは、そこから好みのコンテンツを選ぶことで、参加者全員のスマートフォンでコンテンツを表示し、楽しむことができる。結果、その場の雰囲気をより高め、リッチな体験を共有できる。</p>
+              <p>雰囲気に適したコンテンツを消費し、オン/オフラインコミュニケーションを行うことで、これまでの小さな画面以上の体験を得ることが目標である。</p>
+              <figure>
+                <img src="../images/report/f04-2.jpg" srcset="../images/report/f04-2@2x.jpg 1.5x" width="400" height="300" alt="">
+                <img src="../images/report/f04-1.jpg" srcset="../images/report/f04-1@2x.jpg 1.5x" width="400" height="300" alt="">
+                <figcaption>moood、下の丸がセンサーで測定されたもの。上にサジェストされたサイトが表示される</figcaption>
+              </figure>
+            </section>
+            <section class="columns nobreak bold">
+              <h3><strong>Team B</strong> <span>CoderDojo Kashiwa</span> <span>学生メンターズ</span> <span class="num">(4 名)</span></h3>
+              <p>CHIRIMEN を使ったサンプラーの制作。サンプラーとは特定の音をあらかじめロードしておき、ボタンをタップすることでその音を再生することのできるものだ。楽器が演奏できない人でも音楽を奏でられる機械である。今回は、音データの登録・プロジェクトの作成・ロードといったすべての工程を Web で自前実装した。また、ユーザーアカウント機能があるため、誰でも使用することが可能だ。</p>
+              <p>最終的には、Web ソケット通信を使用して、遠隔地にいる人でもプレイヤーの演奏をブラウザー上で体験できる機能も実装することが可能である。</p>
+              <figure>
+                <img src="../images/report/f05-2.jpg" srcset="../images/report/f05-2@2x.jpg 1.5x" width="400" height="300" alt="">
+                <img src="../images/report/f05-1.jpg" srcset="../images/report/f05-1@2x.jpg 1.5x" width="400" height="300" alt="">
+                <figcaption>サンプラーのデモ、右端にあるのが制作中のサンプラー</figcaption>
+              </figure>
+            </section>
+            <section class="columns nobreak bold">
+              <h3><strong>Team C</strong> <span>Gitobi</span> <span class="num">(5 名)</span></h3>
+              <p>これまでのブラウザーは、サーバーへ接続し、サーバーのリソースを閲覧・操作することができた。これに対し Web of Trees のブラウザーは、木へ接続し、木のリソースを閲覧・操作することを実現した。</p>
+              <p>木のリソースとは、地中部から順に、根、幹、枝、葉、芽、実、種であり、またその木を取り巻く環境である、土、水、空気、風、光、肥料成分 (窒素リン酸カリ)、微量要素 (ミネラル分)、ホルモンだと考える。</p>
+              <p>今回のハッカソンでは、木の最重要リソースである、水の制御に特化した。気温と土壌水分量をブラウザー上に可視化し、その値を基に灌水 OFF/ON を自動で切り替える。緊急時には、ブラウザーから手動で灌水 OFF/ON を切り替えることもできる。</p>
+              <p>同様のシステムは存在するが、非常に高価である。CHIRIMEN を使ったこのシステムでは、安価に実現できることがメリットの 1 つと語っていた。</p>
+              <figure>
+                <img src="../images/report/f06-2.jpg" srcset="../images/report/f06-2@2x.jpg 1.5x" width="400" height="300" alt="">
+                <img src="../images/report/f06-1.jpg" srcset="../images/report/f06-1@2x.jpg 1.5x" width="400" height="300" alt="">
+                <figcaption>中央のディスプレイでリソースを監視。乾いた土を使い灌水をデモ</figcaption>
+              </figure>
+            </section>
+            <section class="columns nobreak bold">
+              <h3><strong>Team D</strong> <span>つくるラボ</span> <span class="num">(5 名)</span></h3>
+              <p>普段は目に見えにくい現実の世界を直感的に伝える可視化ツール「HeartWeather」を作成。もっとも分かりやすい例では、世界の各地の天気状態を分かりやすく表示する。多くの会社で行われている社員の満足度調査では、結果はきれいなグラフでまとめられて報告されるが、直感的には分かりづらいものである。また、半年に一度程度の調査では、常に変化する社員の気持ちは経営者には伝わらない。そこで、日常の社員の気持ちの変化をとらえ、「天気」という誰でも直感的に分かる現象で表現するのがこの作品である。Web の表現を「画面」だけでなく、リアルな「現象」へと拡張する。</p>
+              <p>「社長、最近どうですか？」「いやー、雨ばっかりで困っています」という会話が当たり前になるかもしれない。</p>
+              <p>HeartWeather を使えば、社員の満足度のみならず、株価や嫁の機嫌との連動はもちろん、各地の天気や思い出の日の天気を表現することもできる。</p>
+              <p>参考リンク: <a href="https://www.facebook.com/tsukurulab.team/">つくるラボ</a></p>
+              <figure>
+                <img src="../images/report/f07-2.jpg" srcset="../images/report/f07-2@2x.jpg 1.5x" width="400" height="300" alt="">
+                <img src="../images/report/f07-1.jpg" srcset="../images/report/f07-1@2x.jpg 1.5x" width="400" height="300" alt="">
+                <figcaption>画面と一緒に LED や水を使い天気を表現</figcaption>
+              </figure>
+            </section>
+            <section class="columns nobreak bold">
+              <h3><strong>Team E</strong> <span>チーム</span><span>温泉行きたい</span> <span class="num">(2 名)</span></h3>
+              <p>Web × IoT で音楽をもっと身近にすることが目標。今まで楽器は個人が目の前にある楽器しか演奏できなかった。究極的に目指したいのは、インターネット経由で、みんなでみんなの楽器を演奏すること。みんなで音楽を演奏することで、世界はもっと穏やかになる。</p>
+              <p>今回のシステムは 1 台の楽器を、インターネット越しに複数の携帯電話から制御して音楽を奏でることを目指した。CHIRIMEN は MIDI シーケンサーになっており、サーバーからの指示に従って楽曲再生や鍵盤操作を行う。ユーザーは自分の携帯電話でサーバーへアクセスし、Web アプリケーションを利用して、CHIRIMEN を操作するコマンドをサーバーに送る。</p>
+              <p>実例として複数人でバッハの小フーガを演奏するアプリ「みんなでフーガ」を作成。奏者全員が上手に操作を行うと、素晴らしい音楽が奏でられるだろう。</p>
+              <figure>
+                <img src="../images/report/f08-2.jpg" srcset="../images/report/f08-2@2x.jpg 1.5x" width="400" height="300" alt="">
+                <img src="../images/report/f08-1.jpg" srcset="../images/report/f08-1@2x.jpg 1.5x" width="400" height="300" alt="">
+                <figcaption>「みんなでフーガ」を実演中</figcaption>
+              </figure>
+            </section>
+            <section class="columns nobreak bold">
+              <h3><strong>Team F</strong> <span>塵のような</span><span>メンタリティ</span> <span class="num">(3 名)</span></h3>
+              <p>FlashAir 上にサーバーを立て、それに対して iPad で操作を行う作品。iPad Air が傾いていることを検知し、シャオミーのロボット (シャオミー君) が飛んで教えてくれる機能を実装。今回のハッカソンでは、iPad は 1 台のみであったが、複数の iPad を使用することもできる。シャオミー君の動作は画像で表現した。さらに、プロペラも回る。</p>
+              <figure>
+                <img src="../images/report/f09-2.jpg" srcset="../images/report/f09-2@2x.jpg 1.5x" width="400" height="300" alt="">
+                <img src="../images/report/f09-1.jpg" srcset="../images/report/f09-1@2x.jpg 1.5x" width="400" height="300" alt="">
+                <figcaption>シャオミーのロボットを使いデモ中</figcaption>
+              </figure>
+            </section>
+            <section class="columns nobreak bold">
+              <h3><strong>Team G</strong> <span>Effective Electroid</span> <span>Interactive Controller</span> <span>をつくる集団</span> <span class="num">(5 名)</span></h3>
+              <p>動物園に設置する案内板を制作。動物園の中の動物はどこにいるのか分かりにくい、という課題があると感じたことが動機である。そのため、CHIRIMEN を使ったこの製品でそれを解決しようと考えた。</p>
+              <p>この製品はタッチセンサーや曲げセンサーを利用し、ユーザーがその動物を選択したと判断したとき、風見鶏がその方向を向き、画面上でも様々な表示がされ、来園者にその動物がいる場所を案内する。</p>
+              <p>CHIRIMEN の、JavaScript から GPIO や I2C を利用できるという特徴を利用して、動物園の中の色々な場所に同じ CHIRIMEN を置いても、センサーシールドを交換さえすれば、あとは違う Web アドレスにアクセスすることによって様々なカスタマイズを可能とした。</p>
+              <figure>
+                <img src="../images/report/f10-2.jpg" srcset="../images/report/f10-2@2x.jpg 1.5x" width="400" height="300" alt="">
+                <img src="../images/report/f10-1.jpg" srcset="../images/report/f10-1@2x.jpg 1.5x" width="400" height="300" alt="">
+                <figcaption>手前の動物に触れると画面と風見鶏で場所を案内。蛇には曲げセンサーも内蔵されている</figcaption>
+              </figure>
+            </section>
+            <section class="columns nobreak bold">
+              <h3><strong>Team H</strong> <span>MGN3/4</span> <span class="num">(4 名)</span></h3>
+              <p>CHIRIMEN による家電製品 (エアコン、照明) などを遠隔操作。外出先でもスマートフォンなど、リモコンによる家電を手動または自動操作可能。CHIRIMEN に温度センサー、光センサー、サーボモーターを搭載する。CHIRIMEN に値を渡してサーボモーターを通してリモコンを操作する。</p>
+              <p>さらに、リモコンを操作することで家電の電源を入れたり、切ったりすることもできる。具体的には、温度センサーによって一定の温度になったら、自動的にエアコンを起動したり、光センサーによって一定の明るさになったら、自動的に照明を付けたりすることも可能。</p>
+              <p>将来目標としては、タイヤを付け、みずからリモコンを探す機能も搭載したいとのことであった。</p>
+              <figure>
+                <img src="../images/report/f11-2.jpg" srcset="../images/report/f11-2@2x.jpg 1.5x" width="400" height="300" alt="">
+                <img src="../images/report/f11-1.jpg" srcset="../images/report/f11-1@2x.jpg 1.5x" width="400" height="300" alt="">
+                <figcaption>左のタブレットから操作を行う。サーボモーターがリモコンのスイッチを押す</figcaption>
+              </figure>
+            </section>
+            <section class="columns nobreak bold">
+              <h3><strong>Team I</strong> <span>女子トイレ</span><span>行列対策チーム</span> <span class="num">(5 名)</span></h3>
+              <p>女性のトイレ使用時間が長い問題を解決するシステムを CHIRIMEN とセンサーを使い構築。トイレに行列ができて一定時間経つと、1. 便座に嫌な振動が発生、2. ノックの音が鳴る、3. 音姫が使えなくなる、4. ウォシュレットが使えなくなる</p>
+              <p>使いにくいトイレ環境を徐々に実現していく提案が行われた。成果物であるが、振動便座、トイレノックシステムまでが今回のハッカソンで作成された。これとは違う発想であるが、すっきりしない顔をしていたら、ウォシュレットの水量を 3 倍にするといったアイデアも提案された。</p>
+              <figure>
+                <img src="../images/report/f12-2.jpg" srcset="../images/report/f12-2@2x.jpg 1.5x" width="400" height="300" alt="">
+                <img src="../images/report/f12-1.jpg" srcset="../images/report/f12-1@2x.jpg 1.5x" width="400" height="300" alt="">
+                <figcaption>中央のディスプレイではトイレの空き状況が確認できる</figcaption>
+              </figure>
+            </section>
+            <section class="columns nobreak bold">
+              <h3><strong>Team J</strong> <span>MelonNeXT</span> <span class="num">(3 名)</span></h3>
+              <p>遠隔地に住む高齢者の見守りを行う救急箱の作成。今回のハッカソンでは、温度センサーを利用し、救急箱内部の温度を測定する機能までが作成された。将来的には、体に身に付け、体温、脈拍といったデータを測定し、遠隔地にいる家族にその値や警告を知らせることを目標としたいとのことであった。</p>
+              <figure>
+                <img src="../images/report/f13-2.jpg" srcset="../images/report/f13-2@2x.jpg 1.5x" width="400" height="300" alt="">
+                <img src="../images/report/f13-1.jpg" srcset="../images/report/f13-1@2x.jpg 1.5x" width="400" height="300" alt="">
+                <figcaption>ディスプレイに温度を表示</figcaption>
+              </figure>
+            </section>
+            <section class="columns nobreak bold">
+              <h3><strong>Team K</strong> <span class="num">(3 名)</span></h3>
+              <p>靴に装着する WoT (Web of Things) デバイス。靴底の圧力センサーを用いることで、より精密な歩数の計測を行う。従来の振動センサーを利用した万歩計よりも高い精度で歩数をカウントすることができる。そして、記録した歩数を 1 日ごとの記録し、視覚的に日々の運動量を知ることができる。さらに、小型ファンを搭載し、靴の中に空気の流れを生み出すことで、快適なウォーキングをすることができる。</p>
+              <figure>
+                <img src="../images/report/f14-2.jpg" srcset="../images/report/f14-2@2x.jpg 1.5x" width="400" height="300" alt="">
+                <img src="../images/report/f14-1.jpg" srcset="../images/report/f14-1@2x.jpg 1.5x" width="400" height="300" alt="">
+                <figcaption>歩数などがディスプレイに表示。右の黄色の部分を靴底に入れる</figcaption>
+              </figure>
+            </section>
+            <section class="columns nobreak bold">
+              <h3><strong>Team L</strong> <span class="num">(4 名)</span></h3>
+              <p>植物の特徴、人間のインタラクティブな入力により植物の感情、人間の気持ちを音楽で奏でる。植物は一見すると静的な生命体と捉えられる。しかし、実際には賑やかな存在である。それを検出する多彩なセンサー (5 種類 9 つのパラメーター) によりその機能を拡張し、人間とセッションをできるようにした作品である。</p>
+              <p>具体的には、水をあげたり、息を吹きかけたり (植物にとっては二酸化炭素の補給) といったイベントが発生すると、その結果を反映し、快適そうな感情を明るい音 (長調の音色) で示す。</p>
+              <figure>
+                <img src="../images/report/f15-2.jpg" srcset="../images/report/f15-2@2x.jpg 1.5x" width="400" height="300" alt="">
+                <img src="../images/report/f15-1.jpg" srcset="../images/report/f15-1@2x.jpg 1.5x" width="400" height="300" alt="">
+                <figcaption>ディスプレイには、植物の状態も示される</figcaption>
+              </figure>
+            </section>
+            <div class="row">
+              <div class="col">
+                <figure>
+                  <img src="../images/report/f16.jpg" srcset="../images/report/f16@2x.jpg 1.5x" width="400" height="300" alt="">
+                  <figcaption>入場する参加者</figcaption>
+                </figure>
+              </div>
+              <div class="col">
+                <p>本ハッカソン当初は、10 チーム 30 名くらいと見込んでいた。しかし、予定よりも多数の応募があった。中でも学生チームの参加が多かった点も見逃せないであろう。今後、Web 技術や IoT の仕事や研究に若い力が集まるといった期待が持てるハッカソンとなった。</p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <div id="orientation" class="outer outer-1">
+        <div class="inner">
+          <section>
+            <h2><span>当日の様子</span> <span>～</span> <span>まずは</span><span>オリエン</span><span>テーション</span></h2>
+            <div class="row">
+              <div class="col">
+                <figure>
+                  <img src="../images/report/f17.jpg" srcset="../images/report/f17@2x.jpg 1.5x" width="400" height="300" alt="">
+                  <figcaption>主催の Web × IoT メイカーズハッカソン実行委員会 代表 高木幸一</figcaption>
+                </figure>
+                <p>1 日目、10:00 からハッカソンがスタートする。ハッカソン実行委員会代表の高木幸一より、オリエンテーションが行われた。今回のハッカソンの意義 (Web ブラウザー技術でモノを制御)、ルールや審査方法、技術的なサポートを行うチューターなどについて説明があった。</p>
+              </div>
+              <div class="col">
+                <p>次いで慶應義塾大学大学院政策・メディア研究科特任准教授/W3C Project Specialist の芦村和幸氏から、<a href="../docs/20170318-WoT-ka.pdf">W3C の活動について紹介が行われた</a>。</p>
+                <figure>
+                  <img src="../images/report/f18.jpg" srcset="../images/report/f18@2x.jpg 1.5x" width="400" height="300" alt="">
+                  <figcaption>W3C 芦村和幸氏</figcaption>
+                </figure>
+              </div>
+            </div>
+            <div class="hr"></div>
+            <div class="row">
+              <div class="col">
+                <figure>
+                  <img src="../images/report/f19.jpg" srcset="../images/report/f19@2x.jpg 1.5x" width="400" height="300" alt="">
+                  <figcaption>FlashAir Developers 米澤遼氏</figcaption>
+                </figure>
+                <p>標準化やその作業についての紹介に続き、FlashAir Developers の米澤遼氏が FlashAir について紹介を行った。FlashAir は、大容量 SD メモリーカードで、内部に無線 LAN 機能と Web サーバーが含まれている。これらの機能を使うことで、ユニークな機器を自作できる。今回のハッカソンで、利用しているチームもあった。</p>
+              </div>
+              <div class="col">
+                <p>最後に事務局の井上恵理より、2 日間のスケジュールや注意事項などの説明を行った。</p>
+                <figure>
+                  <img src="../images/report/f20.jpg" srcset="../images/report/f20@2x.jpg 1.5x" width="400" height="300" alt="">
+                  <figcaption>ハッカソン実行委員会事務局 井上恵理</figcaption>
+                </figure>
+              </div>
+            </div>
+            <div class="hr"></div>
+            <div class="row">
+              <div class="col">
+                <p>会場には、機材の貸し出しや無料の部材も用意され、開始直後は一斉に参加者が機材の準備に取りかかり、慌ただしい雰囲気となった。しかし、1 時間もすると落ち着き、いよいよハッカソンの開始である。</p>
+              </div>
+              <div class="col">
+                <figure>
+                  <img src="../images/report/f21.jpg" srcset="../images/report/f21@2x.jpg 1.5x" width="400" height="300" alt="">
+                  <figcaption>貸し出し機器と無料の部材</figcaption>
+                </figure>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <div id="margin-2" class="margin"></div>
+      <div id="work" class="outer outer-2">
+        <div class="inner">
+          <section>
+            <h2><span>ハッカソン</span><span>スタート</span> <span>～</span> <span>チーム作業の</span><span>開始</span></h2>
+            <div class="row">
+              <div class="col">
+                <p>ほとんどのチームが CHIRIMEN を事前借用しており、かなり準備が進んでいたようである。すぐさまモノ作りに着手するチームもあれば、ミーティングを行い、制作方針などを確認するチームもあった。また、午後からは、必要なパーツを買い出しに出るチームもあった。こうして、スタートしたハッカソンであるが、本当に自由な雰囲気であった。飲食も自由であったため、飲み物やお菓子が並ぶ机で、作業を行う参加者が目立った。</p>
+                <figure>
+                  <img src="../images/report/f22-1.jpg" srcset="../images/report/f22-1@2x.jpg 1.5x" width="400" height="300" alt="">
+                  <img src="../images/report/f22-2.jpg" srcset="../images/report/f22-2@2x.jpg 1.5x" width="400" height="300" alt="">
+                  <figcaption>1 日目の風景</figcaption>
+                </figure>
+              </div>
+              <div class="col">
+                <p>午後には、Aid Station (部品販売コーナー) も開設された。</p>
+                <figure>
+                  <img src="../images/report/f23.jpg" srcset="../images/report/f23@2x.jpg 1.5x" width="400" height="300" alt="">
+                  <figcaption>Aid Station (部品販売コーナー)</figcaption>
+                </figure>
+                <p>夕刻には、おやつタイムとして、参加者にたこ焼きが振る舞われた。</p>
+                <figure>
+                  <img src="../images/report/f24.jpg" srcset="../images/report/f24@2x.jpg 1.5x" width="400" height="300" alt="">
+                  <figcaption>たこ焼きタイム</figcaption>
+                </figure>
+              </div>
+            </div>
+            <div class="hr"></div>
+            <div class="row">
+              <div class="col">
+                <figure>
+                  <img src="../images/report/f25.jpg" srcset="../images/report/f25@2x.jpg 1.5x" width="400" height="300" alt="">
+                  <figcaption>たこ焼きを食べながら</figcaption>
+                </figure>
+                <p>たこ焼き食べながら、モノ作りやプログラミングと、これもゆるい雰囲気に満ち溢れていた。</p>
+              </div>
+              <div class="col">
+                <p>初日は、20 時までの作業となった。翌日は 10 時からの予定であったが、10 時前には既に多くのチームが作業を始めていた。2 日目になると、少しずつ形が見え始めてくる。</p>
+                <figure>
+                  <img src="../images/report/f26.jpg" srcset="../images/report/f26@2x.jpg 1.5x" width="400" height="300" alt="">
+                  <figcaption>姿を見せ始めた作品</figcaption>
+                </figure>
+              </div>
+            </div>
+            <div class="hr"></div>
+            <div class="row">
+              <div class="col">
+                <p>また、音なども聞こえたりと、一気ににぎわいを増してくる。早いところでは、昼過ぎくらいに完成し、デモの準備を始めるチームも現れ始めた。</p>
+                <p>午後を回ると、審査員の先生方も来場し、会場を見学する姿があった。</p>
+                <figure>
+                  <img src="../images/report/f27.jpg" srcset="../images/report/f27@2x.jpg 1.5x" width="400" height="300" alt="">
+                  <figcaption>会場を回る中村修氏、瀧田佐登子氏、芦村和幸氏 (左から)</figcaption>
+                </figure>
+              </div>
+              <div class="col">
+                <figure>
+                  <img src="../images/report/f28.jpg" srcset="../images/report/f28@2x.jpg 1.5x" width="400" height="300" alt="">
+                  <figcaption>審査開始。左から中村修氏、苗村健氏、瀧田佐登子氏</figcaption>
+                </figure>
+                <p>審査は、参加チームが多かったため、当初の予定を繰り上げて 14 時半から行われた。</p>
+                <p>今回のハッカソンの成果発表は、スライドを使ってのプレゼンテーションスタイルではなく、あえて作品自体にフォーカスできるよう、審査員が各チームの作業テーブルを廻り、5 分間で実物のデモ見るというスタイルで行った。</p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <div id="feedback" class="outer outer-1">
+        <div class="inner">
+          <section>
+            <h2><span>参加者からの</span><span>フィードバック</span><span>タイム</span></h2>
+            <div class="row">
+              <div class="col">
+                <p>審査員へのデモが終了後、参加者全員でフィードバックタイムとなった。今回のハッカソンで利用した API (WebGPIO/WebI2C) についての感想を含め、CHIRIMEN を使っての印象や Web ブラウザー技術のみで実装するハードウェア制御に関する意見や希望などを出し合った。セキュリティの実装、ドキュメントの日本語化、CHIRIMEN が現在売り切れ状態で入手できないことなど、様々な意見が出された。実際に作品を作ることで分かること、不満な部分、知らなかった方法 (デバッグ) などが明らかになる。100% フィードバックされるとは限らないが、決して無駄ではないはずだ。</p>
+                <p>特に芦村氏は、API に関して要望があれば W3C に寄せて欲しいと語った。やはり、希望が多いものほど、実現の可能性は高い。英語という制約があるし、もし、どこにリクエストしていいかわからないのであれば、<a href="https://www.w3.org/People/#ashimura">自分宛て</a> に送って欲しいとも語っていた。</p>
+              </div>
+              <div class="col">
+                <figure>
+                  <img src="../images/report/f29.jpg" srcset="../images/report/f29@2x.jpg 1.5x" width="400" height="300" alt="">
+                  <figcaption>参加者同士が輪になって議論</figcaption>
+                </figure>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <div id="margin-3" class="margin"></div>
+      <div id="results" class="outer outer-2">
+        <div class="inner">
+          <section>
+            <h2>審査結果</h2>
+            <div class="row">
+              <div class="col">
+                <p>いよいよ、審査結果の発表となった。</p>
+                <figure>
+                  <img src="../images/report/f30.jpg" srcset="../images/report/f30@2x.jpg 1.5x" width="400" height="300" alt="">
+                  <figcaption>結果発表をする中村氏</figcaption>
+                </figure>
+                <p>総評として、皆さんの作品をとても楽しく拝見できた。引き続き、がんばってほしいと述べた。ここで実は爆弾発言があったのだが、懇親会で実現されることとなる。</p>
+              </div>
+              <div class="col">
+                <p>優秀賞は Team A の村井研元 Arch の 2 名が受賞した。</p>
+                <figure>
+                  <img src="../images/report/f31.jpg" srcset="../images/report/f31@2x.jpg 1.5x" width="400" height="300" alt="">
+                  <figcaption>瀧田氏から優秀賞の賞金を受け取る村井研元 Arch の 2 人</figcaption>
+                </figure>
+                <p>中村氏は受賞理由について、複数のセンサーを使うのは Web でなくてもできる。しかし、Web を使っているからこそ、インターネットの情報をマッシュアップできる点を評価したとのことだ。</p>
+              </div>
+            </div>
+            <div class="hr"></div>
+            <div class="row">
+              <div class="col">
+                <p>続いて、最優秀賞は、Team D のつくるラボの 5 名に決まった。</p>
+                <figure>
+                  <img src="../images/report/f32.jpg" srcset="../images/report/f32@2x.jpg 1.5x" width="400" height="300" alt="">
+                  <figcaption>苗村氏から賞金を受け取るつくるラボの 5 名</figcaption>
+                </figure>
+              </div>
+              <div class="col">
+                <p>受賞理由は、この作品ではアクチュエーターを使い、Web が単にラスタライゼーションではなく、3D VR として立体の世界感を構成している点が全審査員から評価された。そして、人間の感情や様々なものを天気で表現することに着目したことも高い評価となった。</p>
+                <figure>
+                  <img src="../images/report/f33.jpg" srcset="../images/report/f33@2x.jpg 1.5x" width="400" height="300" alt="">
+                  <figcaption>全員で記念撮影</figcaption>
+                </figure>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <div id="party" class="outer outer-1">
+        <div class="inner">
+          <section>
+            <h2><span>最後は懇親会で</span><span>カンパイ！</span></h2>
+            <div class="row">
+              <div class="col">
+                <figure>
+                  <img src="../images/report/f34.jpg" srcset="../images/report/f34@2x.jpg 1.5x" width="400" height="300" alt="">
+                  <figcaption>総務省 中西悦子氏</figcaption>
+                </figure>
+              </div>
+              <div class="col">
+                <p>最後は懇親会となった。乾杯の音頭をとったのは、本ハッカソンの後援を行った総務省情報通信国際戦略局通信規格課長の中西悦子氏。</p>
+                <p>なぜに着物？と思われるかもしれないが、なんと本物の縮緬 (ちりめん) で作られている (一同、納得)。まずは参加者へのこの 2 日間の労をねぎらった。そして、次世代を担う若い方々が、クールなプログラマーになられることを切に希望すると語った。そして、完成しなかったチームはぜひ、完成を目指してほしい、さらに来年度もできれば継続していきたいとのこと。そして、ただ面白かったではなく、次に繋がる活動に繋げていただきたいと締めくくり、乾杯の発声を行った。</p>
+              </div>
+            </div>
+            <div class="hr"></div>
+            <div class="row">
+              <div class="col">
+                <p>さて、伏線が張られまくった CHIRIMEN であるが (中村氏の爆弾発言は、今後も開発を続けて欲しいので CHIRIMEN を賞品に！であった)、宴の最中に瀧田氏から CHIRIMEN 1 台を各チームに寄贈することが発表された。動作チェックなどもあるので当日ではなく、後日となってしまったが、これには参加者も大いに盛り上がった。</p>
+                <figure>
+                  <img src="../images/report/f35.jpg" srcset="../images/report/f35@2x.jpg 1.5x" width="400" height="300" alt="">
+                  <figcaption>CHIRIMEN のプレゼントを発表する瀧田氏</figcaption>
+                </figure>
+              </div>
+              <div class="col">
+                <figure>
+                  <img src="../images/report/f36.jpg" srcset="../images/report/f36@2x.jpg 1.5x" width="400" height="300" alt="">
+                  <figcaption>Impact HUB Tokyo 柏木貴恵氏</figcaption>
+                </figure>
+                <p>また、会場となった Impact HUB Tokyo の柏木貴恵氏からも挨拶をいただいた。グローバルの Impact HUB の紹介やこの東京ステーション (Impact HUB Tokyo) の由来などが語られ、最後に参加者一同がお礼の意味をこめて、盛大な拍手を贈った。</p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <div id="margin-4" class="margin"></div>
+      <div id="afterword" class="outer outer-2">
+        <div class="inner">
+          <section>
+            <h2>おわりに</h2>
+            <div class="row">
+              <div class="col">
+                <p>2 日間に及んだ Web × IoT メイカーズハッカソン。そのすべてを紹介することは不可能であるが、本稿にてその雰囲気の一部でも伝われば幸いである。若い世代の積極的な参加、自由な雰囲気、そして、創意あふれる作品群はもちろん、本ハッカソンを通じて参加者や関係者が共有したソフトウェアとハードウェア双方の知見が、今後、さらにニーズが高まる IoT 分野を牽引するイノベーション力を備えたエンジニアのスキルアップにつながることを期待する。</p>
+              </div>
+              <div class="col">
+                <p>最後に、2 日間、真剣にハックと Web ブラウザー技術でのモノの制御に挑戦した参加者一同、そして本ハッカソンに協力いただいたチューターやスタッフ、協力組織の方々に主催者からの感謝の意を表したい。</p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <div id="footer" class="outer">
+        <div class="inner">
+          <footer role="contentinfo">
+            <h2>サイト情報</h2>
+            <p><span>Copyright &copy; 2017</span> <span>Web × IoT メイカーズハッカソン</span><span>実行委員会</span></p>
+          </footer>
+        </div>
+      </div>
+    </main>
+    <script src="https://use.typekit.net/yfn4cbp.js"></script>
+    <script src="../scripts/main.js"></script>
+  </body>
+</html>

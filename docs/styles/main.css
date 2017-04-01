@@ -133,6 +133,22 @@ ul.grid.pics li a * {
   pointer-events: none;
 }
 
+figure {
+  margin: 16px 0;
+  text-align: center;
+}
+
+figcaption {
+  margin: 0 32px;
+  font-size: 14px;
+  opacity: .6;
+}
+
+figure img {
+  display: block;
+  margin: 12px auto;
+}
+
 .button {
   border-width: 4px;
   border-style: solid;
@@ -193,91 +209,10 @@ ul.grid.pics li a * {
   white-space: nowrap;
 }
 
-#intro h2, #brief h2, #details h2, #footer h2 {
+#footer h2 {
   position: absolute;
   left: -99999px;
   height: 0;
-}
-
-#intro [itemprop="description"] {
-  font-size: 1.25rem;
-  line-height: 1.5;
-}
-
-#brief h3 ~ section {
-  margin-top: 24px;
-}
-
-#brief ul.grid.labels {
-  font-size: 1.25rem;
-}
-
-#outline .profile [itemprop="jobTitle"]::before {
-  content: "(";
-}
-
-#outline .profile [itemprop="jobTitle"]::after {
-  content: ")";
-}
-
-#outline .profile [itemprop="image"],
-#outline .profile [itemprop="description"] {
-  display: none;
-}
-
-#touch-try {
-  overflow: hidden;
-}
-
-#touch-try img {
-  display: block;
-}
-
-#schedule caption {
-  margin: 0 0 16px;
-  font-size: 2rem;
-}
-
-#faq .columns section:not(:last-child) {
-  margin-bottom: 16px;
-}
-
-#faq h3 {
-  margin: 0;
-  font-size: 1rem;
-  line-height: 1.75;
-  font-weight: 700;
-  text-align: left;
-}
-
-#faq h3::before {
-  content: "Q. ";
-}
-
-#faq p {
-  margin: 0;
-}
-
-#faq p::before {
-  content: "A. ";
-}
-
-#join ul.grid.labels {
-  flex-direction: row !important;
-}
-
-#join .button {
-  display: block;
-  margin: 0 auto;
-  min-width: 10em;
-  font-size: 1.25rem;
-  line-height: 1.5;
-}
-
-#join .button + span {
-  display: block;
-  margin: 8px 0;
-  color: #999;
 }
 
 #footer {
@@ -309,8 +244,26 @@ ul.grid.pics li a * {
     color: #33AAE4;
   }
 
+  figure img {
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, .5);
+  }
+
   .outer {
     overflow: hidden;
+  }
+
+  .outer-1 {
+    background-color: #F1EFE8;
+    background-image: url(../images/backgrounds/sand.png);
+  }
+
+  .outer-2 {
+    color: #EEE;
+    background-color: #2E3A42;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .5);
   }
 
   .inner {
@@ -320,12 +273,25 @@ ul.grid.pics li a * {
 
   .inner > section > section.bold {
     background-color: rgba(0, 0, 0, .2);
-    margin: 40px -32px 0;
+    margin: 40px -32px;
     padding: 32px;
   }
 
   .inner > section > section.bold > :last-child {
     margin: 0;
+  }
+
+  .hr {
+    overflow: hidden;
+    margin: 32px 0;
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+    opacity: .2;
+  }
+
+  .outer-2 .hr {
+    background-color: #FFF;
   }
 
   .row {
@@ -349,8 +315,14 @@ ul.grid.pics li a * {
 
   .columns.nobreak > * {
     overflow: hidden;
+    -webkit-column-break-inside: avoid;
     page-break-inside: avoid;
     break-inside: avoid;
+  }
+
+  .columns.nobreak > figure {
+    display: inline-block; /* Avoid a wrap bug in Safari */
+    width: 100%;
   }
 
   .columns > :first-child {
@@ -373,13 +345,14 @@ ul.grid.pics li a * {
   }
 
   #header {
-    padding: 80px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 480px;
     color: #EEE;
     background-color: #333;
-    background-image: url(../images/backgrounds/teams.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
     text-align: center;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
   }
@@ -391,6 +364,7 @@ ul.grid.pics li a * {
   #nav {
     position: sticky;
     top: 0;
+    z-index: 100;
     background-color: #414F5C;
   }
 
@@ -415,63 +389,8 @@ ul.grid.pics li a * {
     text-shadow: 1px 1px 1px rgba(0, 0, 0, .5);
   }
 
-  #intro, #chirimen, #schedule, #details, #join {
-    color: #EEE;
-    background-color: #2E3A42;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, .5);
-  }
-
-  #intro {
-    background-image: url(../images/backgrounds/board-texture-1.jpg);
-  }
-
-  #intro p {
-    margin: 0 0 12px;
-  }
-
-  #intro p:last-child {
-    margin-bottom: 0;
-  }
-
   #chirimen {
     background-image: url(../images/backgrounds/chirimen-device.jpg);
-  }
-
-  #chirimen p {
-    margin-bottom: 0;
-  }
-
-  #outline, #faq {
-    background-color: #F1EFE8;
-    background-image: url(../images/backgrounds/sand.png);
-  }
-
-  #outline th, #outline td {
-    border-color: #C8C6B5;
-  }
-
-  #details {
-    background-image: url(../images/backgrounds/board-texture-2.jpg);
-  }
-
-  #touch-try img {
-    float: right;
-    margin: 0 0 0 32px;
-  }
-
-  #schedule {
-    background-image: url(../images/backgrounds/team.jpg);
-  }
-
-  #schedule th, #schedule td {
-    border-color: rgba(255, 255, 255, .4);
-  }
-
-  #join {
-    background-image: url(../images/backgrounds/board-texture-3.jpg);
   }
 
   #footer footer {
@@ -514,30 +433,6 @@ ul.grid.pics li a * {
     height: auto;
     background-color: #F1EFE8;
     box-shadow: 0 0 16px rgba(0, 0, 0, .5);
-  }
-
-  .overlay.profile [itemprop="image"] {
-    float: left;
-    margin-right: 16px;
-  }
-
-  .overlay.profile [itemprop="image"] ~ * {
-    margin-left: 176px;
-  }
-
-  .overlay.profile [itemprop="name"] {
-    display: block;
-    font-size: 2rem;
-  }
-
-  .overlay.profile [itemprop="jobTitle"] {
-    display: block;
-  }
-
-  .overlay.profile [itemprop="description"] {
-    margin-top: 8px;
-    margin-bottom: 0;
-    font-size: 0.875rem;
   }
 
   .overlay .close {
@@ -593,10 +488,6 @@ ul.grid.pics li a * {
   #header h1 strong {
     font-size: 4.5rem;
   }
-
-  #judges .grid {
-    margin: 0 120px;
-  }
 }
 
 @media screen and (max-width: 767px) {
@@ -612,17 +503,22 @@ ul.grid.pics li a * {
     font-size: 1rem;
   }
 
+  .inner {
+    margin: 0 12px;
+    width: auto;
+  }
+
+  .inner > section {
+    margin: 24px 12px;
+  }
+
   .inner > section > section.bold {
-    margin: 40px -24px 0;
-    padding: 24px;
+    margin: 24px -12px;
+    padding: 24px 12px;
   }
 
   #nav {
     position: static;
-  }
-
-  #header {
-    padding: 40px 0;
   }
 
   #header h1 strong {
@@ -632,40 +528,9 @@ ul.grid.pics li a * {
   #header h1 em {
     font-size: 2rem;
   }
-
-  #schedule caption {
-    font-size: 1.5rem;
-  }
-
-  .overlay.profile [itemprop="image"] {
-    display: none;
-  }
-
-  .overlay.profile [itemprop="image"] ~ * {
-    margin-left: 0;
-  }
-
-  .overlay.profile [itemprop="name"] {
-    font-size: 1.5rem;
-  }
-
-  .overlay.profile [itemprop="description"] {
-    font-size: .75rem;
-  }
-}
-
-@media screen and (min-width: 640px) and (max-width: 767px) {
-  .inner  {
-    width: 640px;
-  }
 }
 
 @media screen and (max-width: 639px) {
-  .inner {
-    margin: 0 16px;
-    width: auto;
-  }
-
   tr, th, td {
     display: block;
     box-sizing: border-box;
@@ -694,20 +559,12 @@ ul.grid.pics li a * {
     font-size: 1.25em;
   }
 
-  #outline th {
-    background-color: #C8C6B5;
-  }
-
-  #touch-try img {
+  figure img {
     float: none;
     margin: 24px auto;
     width: 288px;
     max-width: 100%;
     height: auto;
-  }
-
-  #schedule th {
-    background-color: rgba(255, 255, 255, .2);
   }
 }
 
@@ -721,6 +578,7 @@ ul.grid.pics li a * {
   }
 
   .inner > section > section {
+    -webkit-column-break-inside: avoid;
     page-break-inside: avoid;
     break-inside: avoid;
   }
@@ -737,11 +595,7 @@ ul.grid.pics li a * {
     font-size: 2rem;
   }
 
-  #nav, #join, #overlay-container {
+  #nav, #overlay-container {
     display: none;
-  }
-
-  #touch-try img {
-    margin: 1em auto;
   }
 }
